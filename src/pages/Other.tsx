@@ -319,11 +319,215 @@ export function Legal({ type }: { type: 'privacy' | 'terms' }) {
               </p>
             </div>
           ) : (
-            <div className="legalContent">
-              <p>
-                Terms of Service content will be added here.
-              </p>
-            </div>
+          <div className="legalContent">
+  <p>
+    <strong>Effective Date:</strong> August 30, 2026
+    <br />
+    <strong>Last Updated:</strong> August 30, 2026
+  </p>
+
+  <p>
+    Welcome to Houston Solutions. These Terms of Service (“Terms”) govern your
+    use of the Houston Solutions website and any online forms, features,
+    information, or services made available through the website.
+  </p>
+
+  <p>
+    By accessing or using this website, you agree to these Terms. If you do not
+    agree with these Terms, please do not use the website.
+  </p>
+
+  <h2>1. About Houston Solutions</h2>
+
+  <p>
+    Houston Solutions provides residential property improvement, maintenance,
+    repair, remodeling, exterior, and related home services in Houston, Texas
+    and surrounding communities.
+  </p>
+
+  <h2>2. Website Use</h2>
+
+  <p>You may use this website only for lawful purposes.</p>
+
+  <ul>
+    <li>Do not use the website for fraudulent or unlawful activity.</li>
+    <li>Do not attempt to interfere with website security.</li>
+    <li>Do not submit false or misleading information.</li>
+    <li>Do not upload harmful or malicious files.</li>
+  </ul>
+
+  <h2>3. Estimate Requests</h2>
+
+  <p>
+    Submitting an estimate request does not create a contract, guarantee
+    acceptance of a project, guarantee availability, or guarantee a specific
+    price or completion date.
+  </p>
+
+  <h2>4. Estimates and Pricing</h2>
+
+  <p>
+    Preliminary pricing or estimates may change based on actual site
+    conditions, materials, labor requirements, project size, existing damage,
+    hidden conditions, permits, disposal requirements, or changes requested by
+    the customer.
+  </p>
+
+  <h2>5. Project Information</h2>
+
+  <p>
+    Customers are responsible for providing reasonably accurate project and
+    property information when requesting an estimate or service.
+  </p>
+
+  <h2>6. Photos and File Uploads</h2>
+
+  <p>
+    By uploading photos or files, you represent that you have the right to
+    provide them and that they do not contain unlawful or malicious content.
+  </p>
+
+  <h2>7. Communications</h2>
+
+  <p>
+    By submitting your contact information, you authorize Houston Solutions to
+    contact you regarding your inquiry, estimate request, appointment, or
+    project by phone, text message, or email.
+  </p>
+
+  <h2>8. Scheduling</h2>
+
+  <p>
+    Scheduling is subject to confirmation and may change because of weather,
+    material availability, property access, safety concerns, equipment
+    availability, or other circumstances.
+  </p>
+
+  <h2>9. Contractors and Subcontractors</h2>
+
+  <p>
+    Houston Solutions may use employees, independent contractors,
+    subcontractors, vendors, or other service providers in connection with
+    certain projects.
+  </p>
+
+  <h2>10. Permits and Approvals</h2>
+
+  <p>
+    Certain projects may require permits, inspections, HOA approval, landlord
+    approval, utility coordination, or other authorization.
+  </p>
+
+  <h2>11. Property Access</h2>
+
+  <p>
+    Customers are responsible for providing reasonable and lawful access to the
+    property as needed to evaluate or perform work.
+  </p>
+
+  <h2>12. Changes to Scope of Work</h2>
+
+  <p>
+    Additional work or previously unknown conditions may result in changes to
+    project scope, pricing, and schedule.
+  </p>
+
+  <h2>13. Payment Terms</h2>
+
+  <p>
+    Payment requirements will be stated in the applicable estimate, proposal,
+    invoice, or service agreement.
+  </p>
+
+  <h2>14. Cancellations</h2>
+
+  <p>
+    Cancellation policies may vary depending on the project, materials
+    ordered, scheduling commitments, and any separate written agreement.
+  </p>
+
+  <h2>15. Website Content</h2>
+
+  <p>
+    Houston Solutions attempts to provide accurate website information, but
+    content may occasionally contain errors, outdated information, or
+    incomplete descriptions.
+  </p>
+
+  <h2>16. No Guarantee of Results</h2>
+
+  <p>
+    Every property and project is different. Website examples do not guarantee
+    identical results for every customer or property.
+  </p>
+
+  <h2>17. Third-Party Services</h2>
+
+  <p>
+    The website may rely on third-party services such as hosting,
+    form-processing, analytics, maps, and communications providers.
+  </p>
+
+  <h2>18. Intellectual Property</h2>
+
+  <p>
+    Unless otherwise stated, the original content, branding, text, layout, and
+    graphics on this website are owned by or licensed to Houston Solutions.
+  </p>
+
+  <h2>19. Website Disclaimer</h2>
+
+  <p>
+    The website is provided on an “as is” and “as available” basis. Houston
+    Solutions does not guarantee uninterrupted or error-free website
+    availability.
+  </p>
+
+  <h2>20. Limitation of Liability</h2>
+
+  <p>
+    To the extent permitted by law, Houston Solutions will not be responsible
+    for indirect, incidental, special, or consequential damages arising solely
+    from use of the website.
+  </p>
+
+  <h2>21. Privacy</h2>
+
+  <p>
+    Your use of the website is also subject to the Houston Solutions Privacy
+    Policy.
+  </p>
+
+  <h2>22. Governing Law</h2>
+
+  <p>
+    These Terms are governed by the laws of the State of Texas.
+  </p>
+
+  <h2>23. Changes to These Terms</h2>
+
+  <p>
+    Houston Solutions may update these Terms periodically. Changes become
+    effective when the updated Terms are posted on the website.
+  </p>
+
+  <h2>24. Contact Information</h2>
+
+  <p>
+    <strong>Houston Solutions</strong>
+    <br />
+    Houston, Texas
+    <br />
+    Phone: <a href={siteConfig.phoneHref}>{siteConfig.phone}</a>
+    <br />
+    Email:{' '}
+    <a href={`mailto:${siteConfig.email}`}>
+      {siteConfig.email}
+    </a>
+    <br />
+    Website: www.solutionshouston.com
+  </p>
+</div>
           )}
         </div>
       </section>
