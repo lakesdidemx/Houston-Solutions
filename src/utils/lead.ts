@@ -18,11 +18,20 @@ export async function submitLead(form: HTMLFormElement) {
   });
 
   if (!response.ok) {
-    const result = await response.json().catch(() => null);
+    let message = 'Unable to submit your request. Please try again or call us.';
 
-    const message =
-      result?.errors?.[0]?.message ||
-      'Unable to submit your request. Please try again or call us.';
+    try {
+      const result = await response.json();
+
+      if (result?.errors?.length) {
+        message = result.errors
+          .map((error: { message?: string }) => error.message)
+          .filter(Boolean)
+          .join(', ');
+      }
+    } catch {
+      // Keep default message
+    }
 
     throw new Error(message);
   }
