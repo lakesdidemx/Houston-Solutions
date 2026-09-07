@@ -1,5 +1,42 @@
 import { useState } from 'react';import SEO from '../components/SEO';import { Areas,CTA } from '../components/Common';import EstimateForm from '../components/EstimateForm';import { siteConfig } from '../data/site';
-export function Projects(){const cats=['All','Tree Services','Concrete','Remodeling','Painting','Repairs','Exterior'];const [cat,setCat]=useState('All');const all=[['Concrete','Concrete Driveway Replacement','Spring, TX'],['Tree Services','Tree Removal & Cleanup','Cypress, TX'],['Remodeling','Interior Remodel','Houston, TX'],['Painting','Exterior Painting','Katy, TX'],['Repairs','Rental Property Repairs','Houston, TX'],['Exterior','Property Cleanup','Tomball, TX']];return <><SEO title="Projects | Houston Solutions" description="Browse representative Houston Solutions project categories and replaceable project-photo placeholders." path="/projects"/><section className="pageHero"><div className="container"><h1>Project Gallery</h1><p>Examples by service category. Placeholder images are ready to be replaced with real project photography.</p></div></section><section className="section"><div className="container"><div className="filters">{cats.map(x=><button onClick={()=>setCat(x)} className={cat===x?'active':''}>{x}</button>)}</div><div className="projectGrid">{all.filter(x=>cat==='All'||x[0]===cat).map(x=><article className="projectCard" key={x[1]}><div className="projectImg"/><small>{x[0]}</small><h3>{x[1]}</h3><p>{x[2]}</p></article>)}</div></div></section><CTA/></>}
+export function Projects(){const all = [
+  [
+    'Concrete',
+    'Concrete Driveway Replacement',
+    'Spring, TX',
+    '/projects/concrete-driveway.jpg'
+  ],
+  [
+    'Tree Services',
+    'Tree Removal & Cleanup',
+    'Cypress, TX',
+    '/projects/tree-removal.jpg'
+  ],
+  [
+    'Remodeling',
+    'Interior Remodel',
+    'Houston, TX',
+    '/projects/interior-remodel.jpg'
+  ],
+  [
+    'Painting',
+    'Exterior Painting',
+    'Katy, TX',
+    '/projects/exterior-painting.jpg'
+  ],
+  [
+    'Repairs',
+    'Rental Property Repairs',
+    'Houston, TX',
+    '/projects/rental-repairs.jpg'
+  ],
+  [
+    'Exterior',
+    'Property Cleanup',
+    'Tomball, TX',
+    '/projects/property-cleanup.jpg'
+  ]
+];return <><SEO title="Projects | Houston Solutions" description="Browse representative Houston Solutions project categories and replaceable project-photo placeholders." path="/projects"/><section className="pageHero"><div className="container"><h1>Project Gallery</h1><p>Examples by service category. Placeholder images are ready to be replaced with real project photography.</p></div></section><section className="section"><div className="container"><div className="filters">{cats.map(x=><button onClick={()=>setCat(x)} className={cat===x?'active':''}>{x}</button>)}</div><div className="projectGrid">{all.filter(x=>cat==='All'||x[0]===cat).map(x=><article className="projectCard" key={x[1]}><div className="projectImg"/><small>{x[0]}</small><h3>{x[1]}</h3><p>{x[2]}</p></article>)}</div></div></section><CTA/></>}
 export function About(){return <><SEO title="About Houston Solutions | Houston Home Services" description="Learn about Houston Solutions, a multi-service residential property improvement company serving Houston and surrounding communities." path="/about"/><section className="pageHero"><div className="container"><h1>About Houston Solutions</h1><p>A local, straightforward resource for residential repairs, maintenance, remodeling, exterior work, and property improvement.</p></div></section><section className="section"><div className="container narrow"><h2>One Company. Multiple Solutions.</h2><p>Houston Solutions is positioned to help homeowners, landlords, investors, real estate agents, and property managers coordinate a wide range of property projects through one dependable point of contact.</p><p>Our brand focuses on clear communication, professional workmanship, practical service, and an easy estimate process—without unsupported claims or inflated promises.</p></div></section><Areas/><CTA/></>}
 export function ServiceAreas(){return <><SEO title="Houston Service Areas | Houston Solutions" description="Houston Solutions serves Houston and surrounding communities including Spring, The Woodlands, Cypress, Tomball, Katy, Humble, Conroe, and Magnolia." path="/service-areas"/><section className="pageHero"><div className="container"><h1>Houston & Surrounding Service Areas</h1><p>Local residential property services throughout the Houston metro area.</p></div></section><Areas/><CTA/></>}
 export function Contact(){return <><SEO title="Contact Houston Solutions" description="Contact Houston Solutions for home services, repairs, remodeling, tree work, concrete, maintenance, and estimate requests." path="/contact"/><section className="pageHero"><div className="container"><h1>Contact Houston Solutions</h1><p>Tell us what you need or call during business hours.</p></div></section><section className="section"><div className="container split"><div><h2>Contact Information</h2><p><strong>Phone:</strong> <a href={siteConfig.phoneHref}>{siteConfig.phone}</a></p><p><strong>Email:</strong> <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a></p><p><strong>Location:</strong> {siteConfig.location}</p><p><strong>Hours:</strong> {siteConfig.hours}</p></div><EstimateForm compact/></div></section></>}
