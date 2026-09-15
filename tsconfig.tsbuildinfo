@@ -1,1 +1,0 @@
-{"root":["./src/App.tsx","./src/main.tsx","./src/components/Common.tsx","./src/components/EstimateForm.tsx","./src/components/Layout.tsx","./src/components/SEO.tsx","./src/data/site.ts","./src/pages/Home.tsx","./src/pages/Other.tsx","./src/pages/ServicePage.tsx","./src/pages/Services.tsx","./src/utils/lead.ts"],"errors":true,"version":"5.8.3"}

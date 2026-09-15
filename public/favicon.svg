@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Houston Solutions">
+  <rect width="32" height="32" rx="6" fill="#0C2340"/>
+  <path fill="#C45C26" d="M6.2 15.2 16 6.8l9.8 8.4-1.7 1.9L16 10.4 7.9 17.1z"/>
+  <path fill="#F7F4EF" d="M10 16.2h12v9.2H10z"/>
+  <rect x="14.2" y="19.4" width="3.6" height="6" fill="#C45C26"/>
+  <rect x="11.6" y="18.2" width="2.6" height="2.6" fill="#0C2340"/>
+  <rect x="17.8" y="18.2" width="2.6" height="2.6" fill="#0C2340"/>
+</svg>
