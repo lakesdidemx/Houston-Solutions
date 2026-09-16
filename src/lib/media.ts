@@ -220,11 +220,21 @@ const serviceMedia: Record<string, ServiceMedia> = {
     ],
   },
   insulation: {
+    before: {
+      src: "/images/insulation-before.jpg",
+      alt: "Houston attic with thin, settled insulation and exposed joists before blown-in work",
+      caption: "Before — thin, settled attic insulation",
+    },
+    after: {
+      src: "/images/insulation.jpg",
+      alt: "Same Houston attic after an even blown-in cellulose install",
+      caption: "After — even blown-in coverage",
+    },
     gallery: [
       {
-        src: "/images/insulation.jpg",
+        src: "/images/insulation-install.jpg",
         alt: "Fresh blown-in fiberglass packed around HVAC ductwork in a Houston attic",
-        caption: "Blown-in install around ducts",
+        caption: "Blown-in around ducts",
       },
       {
         src: "/images/insulation-work.jpg",

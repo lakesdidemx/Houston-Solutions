@@ -72,16 +72,14 @@ function ServicePage() {
       />
       <article className="mx-auto grid max-w-6xl gap-12 px-5 py-16 md:grid-cols-12 md:px-8 md:py-20">
         <div className="md:col-span-7">
-          {media.videos?.length ? (
-            <JobVideos videos={media.videos} />
-          ) : media.before && media.after ? (
+          {media.before && media.after ? (
             <BeforeAfter
               beforeSrc={media.before.src}
               afterSrc={media.after.src}
               beforeAlt={media.before.alt}
               afterAlt={media.after.alt}
             />
-          ) : (
+          ) : !media.videos?.length ? (
             <div className="overflow-hidden rounded-2xl">
               <img
                 src={service.image}
@@ -89,7 +87,12 @@ function ServicePage() {
                 className="aspect-photo w-full object-cover"
               />
             </div>
-          )}
+          ) : null}
+          {media.videos?.length ? (
+            <div className={media.before && media.after ? "mt-6" : undefined}>
+              <JobVideos videos={media.videos} />
+            </div>
+          ) : null}
           <div className="mt-8 space-y-4 leading-relaxed text-muted">
             {service.intro.map((p) => (
               <p key={p.slice(0, 24)}>{p}</p>

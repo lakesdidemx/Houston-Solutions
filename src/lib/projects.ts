@@ -105,8 +105,9 @@ export const projects: Project[] = [
     service: "Insulation",
     slug: "insulation",
     image: "/images/insulation.jpg",
+    beforeImage: "/images/insulation-before.jpg",
     summary:
-      "Blown-in fiberglass packed around HVAC, pipes, and joists so the attic had even coverage instead of bare bays.",
+      "A thin, settled attic was blown in to an even depth so the house could keep up in Houston heat.",
   },
   {
     id: "insulation-removal-houston",
