@@ -11,7 +11,7 @@ export const Route = createFileRoute("/services/")({
       {
         name: "description",
         content:
-          "Tree removal, concrete, remodeling, painting, drywall, plumbing, electrical, property maintenance, junk removal, and handyman work in Houston and surrounding areas.",
+          "Tree removal, concrete, remodeling, painting, drywall, plumbing, electrical, blown-in insulation, property maintenance, junk removal, and handyman work in Houston and surrounding areas.",
       },
     ],
   }),

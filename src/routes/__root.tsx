@@ -29,7 +29,7 @@ export const Route = createRootRoute({
       {
         name: "keywords",
         content:
-          "Houston home services, home improvement Houston TX, tree removal Houston, tree removal Spring TX, concrete contractors Houston, concrete driveway Houston, home remodeling Houston, remodeling contractor Houston, bathroom remodeling Houston, kitchen remodeling Houston, property maintenance Houston, handyman Houston TX",
+          "Houston home services, home improvement Houston TX, tree removal Houston, tree removal Spring TX, concrete contractors Houston, concrete driveway Houston, home remodeling Houston, remodeling contractor Houston, bathroom remodeling Houston, kitchen remodeling Houston, blown in insulation Houston, attic insulation removal Houston, property maintenance Houston, handyman Houston TX",
       },
     ],
     links: [

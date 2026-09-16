@@ -211,6 +211,30 @@ const serviceMedia: Record<string, ServiceMedia> = {
       },
     ],
   },
+  insulation: {
+    before: {
+      src: "/images/insulation-before.jpg",
+      alt: "Houston attic with thin, settled insulation and exposed joists before blown-in work",
+      caption: "Before — thin, settled attic insulation",
+    },
+    after: {
+      src: "/images/insulation.jpg",
+      alt: "Same Houston attic after an even blown-in cellulose install",
+      caption: "After — even blown-in coverage",
+    },
+    gallery: [
+      {
+        src: "/images/insulation-work.jpg",
+        alt: "Technician blowing cellulose insulation into a Houston residential attic",
+        caption: "Blown-in install in progress",
+      },
+      {
+        src: "/images/insulation-removal.jpg",
+        alt: "Old attic insulation bagged for haul-off during a Houston removal job",
+        caption: "Old insulation pulled and bagged",
+      },
+    ],
+  },
   "property-maintenance": {
     gallery: [
       {

@@ -42,7 +42,7 @@ export const localBusinessJsonLd = {
   "@type": "HomeAndConstructionBusiness",
   name: company.name,
   description:
-    "Houston Solutions provides residential home services and property improvements throughout Houston, Texas and surrounding areas — including tree removal, concrete, remodeling, painting, drywall, plumbing, electrical, and property maintenance.",
+    "Houston Solutions provides residential home services and property improvements throughout Houston, Texas and surrounding areas — including tree removal, concrete, remodeling, painting, drywall, plumbing, electrical, blown-in insulation, and property maintenance.",
   telephone: company.phoneTel,
   email: company.email,
   url: company.website,

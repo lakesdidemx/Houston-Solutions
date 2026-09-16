@@ -98,6 +98,17 @@ export const projects: Project[] = [
     summary:
       "A crushed garage door was taken out and replaced with a new door, squared in the opening and working on the tracks.",
   },
+  {
+    id: "insulation-houston",
+    title: "Blown-in attic insulation",
+    location: "Houston, TX",
+    service: "Insulation",
+    slug: "insulation",
+    image: "/images/insulation.jpg",
+    beforeImage: "/images/insulation-before.jpg",
+    summary:
+      "A thin, settled attic was cleared of the worst of the old material and blown in to an even depth so the house could keep up in Houston heat.",
+  },
 ];
 
 export const featuredProject = projects[2];

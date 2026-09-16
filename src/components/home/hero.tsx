@@ -29,8 +29,8 @@ export function HomeHero() {
         </h1>
         <p className="rise-in rise-in-delay-2 mt-5 max-w-xl text-lg text-paper/80">
           Houston Solutions provides professional home improvement, remodeling,
-          concrete, tree services, repairs, and property maintenance throughout
-          Houston and surrounding areas.
+          concrete, tree services, insulation, repairs, and property maintenance
+          throughout Houston and surrounding areas.
         </p>
         <div className="rise-in rise-in-delay-3 mt-8 flex flex-col gap-3 sm:flex-row">
           <Button asChild size="xl">

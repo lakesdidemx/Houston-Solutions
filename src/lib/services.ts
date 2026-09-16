@@ -33,7 +33,8 @@ export type ServiceIcon =
   | "junk"
   | "garage"
   | "handyman"
-  | "turnover";
+  | "turnover"
+  | "insulation";
 
 export const services: Service[] = [
   {
@@ -257,7 +258,7 @@ export const services: Service[] = [
     seoTitle: "Home Remodeling Houston TX | Remodeling Contractor",
     seoDescription:
       "Home remodeling in Houston, TX — kitchens, bathrooms, and interior updates for homeowners and investors. Clear estimates from Houston Solutions.",
-    related: ["kitchen-remodeling", "bathroom-remodeling", "painting", "drywall"],
+    related: ["kitchen-remodeling", "bathroom-remodeling", "painting", "insulation"],
   },
   {
     slug: "kitchen-remodeling",
@@ -533,7 +534,7 @@ export const services: Service[] = [
     seoTitle: "Drywall Repair Houston TX | Sheetrock Patching",
     seoDescription:
       "Drywall and sheetrock repair in Houston, TX — water damage, holes, texture match, and paint-ready finishes. Call Houston Solutions for a free estimate.",
-    related: ["painting", "plumbing", "remodeling", "rental-turnovers"],
+    related: ["painting", "plumbing", "remodeling", "insulation"],
   },
   {
     slug: "plumbing",
@@ -674,6 +675,87 @@ export const services: Service[] = [
     related: ["remodeling", "handyman", "property-maintenance", "plumbing"],
   },
   {
+    slug: "insulation",
+    name: "Blown-In Insulation & Removal",
+    shortName: "Insulation",
+    icon: "insulation",
+    featured: true,
+    image: "/images/insulation.jpg",
+    cardDescription:
+      "Attic blown-in install, old insulation removal, and the prep that helps Houston houses keep up in the heat.",
+    headline: "Blown-In Insulation Install & Removal in Houston TX",
+    intro: [
+      "Houston attics take a beating. Roof decks run well over 130 degrees in summer, and thin or settled insulation is why a lot of houses never catch up after 2 p.m. Houston Solutions installs blown-in cellulose and fiberglass and removes the old material when it’s compacted, wet, or contaminated.",
+      "We don’t just dump a few inches on top of a mess. If the existing insulation is failing, we pull it, check baffles and recessed-light boxes, then blow an even depth you can actually live with.",
+    ],
+    benefits: [
+      {
+        title: "Quoted to a depth, not a guess",
+        body: "The estimate names the material and the finished depth. You know what you’re buying before the machine shows up.",
+      },
+      {
+        title: "Removal when the old stuff shouldn’t stay",
+        body: "Wet, rodent-soiled, or compacted insulation gets pulled and hauled — not buried under a new layer.",
+      },
+      {
+        title: "Prep that matters in Houston heat",
+        body: "Soffit baffles, hatch dams, and boxes around recessed lights so the new insulation doesn’t choke the attic or sit against hot fixtures.",
+      },
+      {
+        title: "Same company if the attic turns up more work",
+        body: "A roof leak, a wet ceiling, or a bad can light can stay in-house instead of becoming three extra vendors.",
+      },
+    ],
+    types: [
+      {
+        title: "Blown-in attic insulation",
+        body: "Cellulose or fiberglass blown to a consistent depth across the attic floor, including tight bays and around HVAC.",
+      },
+      {
+        title: "Insulation removal and haul-off",
+        body: "Old batts and blown-in material vacuumed or bagged, hauled, and disposed of so the deck is ready for a clean install.",
+      },
+      {
+        title: "Top-off over existing insulation",
+        body: "When the current layer is dry and clean but short of what the house needs, we add material instead of starting over.",
+      },
+      {
+        title: "Dense-pack walls",
+        body: "Where access allows, we fill empty wall cavities through small holes and patch the openings.",
+      },
+      {
+        title: "Attic prep",
+        body: "Baffles at the eaves, dams around the hatch, and covering that keeps insulation out of the living space.",
+      },
+    ],
+    faqs: [
+      {
+        q: "How much insulation do I need in a Houston attic?",
+        a: "Most Houston houses do well in the R-38 to R-49 range in the attic. We look at what’s already there, how settled it is, and quote a finished depth instead of a generic bag count.",
+      },
+      {
+        q: "Do you have to remove the old insulation first?",
+        a: "Not always. If it’s dry, reasonably even, and not contaminated, a top-off is often the right job. Wet, compacted, or soiled material should come out. We’ll say which after we see the attic.",
+      },
+      {
+        q: "Cellulose or fiberglass?",
+        a: "Both work in Houston attics. Cellulose packs well around wiring and bays. Fiberglass is lighter and doesn’t hold moisture the same way. We’ll recommend based on the attic, not a brand pitch.",
+      },
+      {
+        q: "What if the old insulation might contain asbestos?",
+        a: "Vermiculite and some older materials need testing before anyone disturbs them. We won’t pull a suspect attic until that’s cleared. Same rule we use on popcorn ceilings.",
+      },
+      {
+        q: "Will this lower my electric bill?",
+        a: "A thin attic is one of the reasons Houston AC never shuts off. Proper depth and even coverage helps the system keep up. We don’t quote a made-up percentage — the house and the ductwork still have to do their part.",
+      },
+    ],
+    seoTitle: "Blown-In Insulation Houston TX | Install & Removal",
+    seoDescription:
+      "Blown-in attic insulation install and insulation removal in Houston, Spring, Katy, and nearby cities. Free estimates from Houston Solutions.",
+    related: ["drywall", "electrical", "property-maintenance", "remodeling"],
+  },
+  {
     slug: "property-maintenance",
     name: "Property Maintenance",
     shortName: "Property Maintenance",
@@ -740,7 +822,7 @@ export const services: Service[] = [
     seoTitle: "Property Maintenance Houston TX | Rentals & Homes",
     seoDescription:
       "Property maintenance in Houston, TX for homeowners, landlords, and managers. One company for repairs, upkeep, and punch lists. Free estimates.",
-    related: ["rental-turnovers", "handyman", "painting", "junk-removal"],
+    related: ["rental-turnovers", "handyman", "insulation", "painting"],
   },
   {
     slug: "junk-removal",

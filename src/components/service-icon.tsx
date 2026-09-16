@@ -9,6 +9,7 @@ import {
   Plug,
   ShowerHead,
   SquareDashed,
+  ThermometerSun,
   Trash2,
   TreeDeciduous,
   Wrench,
@@ -32,6 +33,7 @@ const icons: Record<ServiceIcon, LucideIcon> = {
   garage: Drill,
   handyman: Hammer,
   turnover: KeyRound,
+  insulation: ThermometerSun,
 };
 
 export function ServiceGlyph({

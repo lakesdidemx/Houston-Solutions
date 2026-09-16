@@ -183,6 +183,7 @@ export default defineConfig(({ command, isPreview }) => ({
         { path: "/services/drywall" },
         { path: "/services/plumbing" },
         { path: "/services/electrical" },
+        { path: "/services/insulation" },
         { path: "/services/property-maintenance" },
         { path: "/services/junk-removal" },
         { path: "/services/garage-exterior" },

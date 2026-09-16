@@ -69,7 +69,7 @@ function AboutPage() {
               improvement company serving Houston and surrounding communities.
               We handle the work that keeps houses livable and investment
               properties ready — from tree removal and concrete to remodeling,
-              painting, repairs, and turnovers.
+              painting, insulation, repairs, and turnovers.
             </p>
             <p>
               Homeowners call us when they want one team they can reach.
