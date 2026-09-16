@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { BeforeAfter } from "@/components/before-after";
 import { EstimateForm } from "@/components/estimate-form";
+import { JobVideos } from "@/components/job-videos";
 import { ServiceJsonLd } from "@/components/json-ld";
 import { Lightbox } from "@/components/lightbox";
 import { PageHero } from "@/components/page-hero";
@@ -71,7 +72,9 @@ function ServicePage() {
       />
       <article className="mx-auto grid max-w-6xl gap-12 px-5 py-16 md:grid-cols-12 md:px-8 md:py-20">
         <div className="md:col-span-7">
-          {media.before && media.after ? (
+          {media.videos?.length ? (
+            <JobVideos videos={media.videos} />
+          ) : media.before && media.after ? (
             <BeforeAfter
               beforeSrc={media.before.src}
               afterSrc={media.after.src}

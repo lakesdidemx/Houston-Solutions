@@ -105,9 +105,18 @@ export const projects: Project[] = [
     service: "Insulation",
     slug: "insulation",
     image: "/images/insulation.jpg",
-    beforeImage: "/images/insulation-before.jpg",
     summary:
-      "A thin, settled attic was cleared of the worst of the old material and blown in to an even depth so the house could keep up in Houston heat.",
+      "Blown-in fiberglass packed around HVAC, pipes, and joists so the attic had even coverage instead of bare bays.",
+  },
+  {
+    id: "insulation-removal-houston",
+    title: "Attic insulation removal",
+    location: "Houston, TX",
+    service: "Insulation",
+    slug: "insulation",
+    image: "/images/insulation-removal.jpg",
+    summary:
+      "Old attic insulation was vacuumed out of the joist bays so the deck was clear for a clean blown-in install.",
   },
 ];
 

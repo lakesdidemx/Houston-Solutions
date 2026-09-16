@@ -4,10 +4,18 @@ export type Photo = {
   caption?: string;
 };
 
+export type JobVideo = {
+  src: string;
+  poster: string;
+  title: string;
+  caption?: string;
+};
+
 export type ServiceMedia = {
   before?: Photo;
   after?: Photo;
   gallery: Photo[];
+  videos?: JobVideo[];
 };
 
 const serviceMedia: Record<string, ServiceMedia> = {
@@ -212,26 +220,45 @@ const serviceMedia: Record<string, ServiceMedia> = {
     ],
   },
   insulation: {
-    before: {
-      src: "/images/insulation-before.jpg",
-      alt: "Houston attic with thin, settled insulation and exposed joists before blown-in work",
-      caption: "Before — thin, settled attic insulation",
-    },
-    after: {
-      src: "/images/insulation.jpg",
-      alt: "Same Houston attic after an even blown-in cellulose install",
-      caption: "After — even blown-in coverage",
-    },
     gallery: [
       {
+        src: "/images/insulation.jpg",
+        alt: "Fresh blown-in fiberglass packed around HVAC ductwork in a Houston attic",
+        caption: "Blown-in install around ducts",
+      },
+      {
         src: "/images/insulation-work.jpg",
-        alt: "Technician blowing cellulose insulation into a Houston residential attic",
-        caption: "Blown-in install in progress",
+        alt: "Blowing hose filling joist bays with fiberglass insulation",
+        caption: "Blowing into the bays",
+      },
+      {
+        src: "/images/insulation-work-2.jpg",
+        alt: "Insulation hose packing blown-in fiberglass next to a flexible duct",
+        caption: "Packing around HVAC",
       },
       {
         src: "/images/insulation-removal.jpg",
-        alt: "Old attic insulation bagged for haul-off during a Houston removal job",
-        caption: "Old insulation pulled and bagged",
+        alt: "Vacuum hose pulling old attic insulation from between joists",
+        caption: "Old insulation coming out",
+      },
+      {
+        src: "/images/insulation-removal-2.jpg",
+        alt: "Attic insulation removal in progress with vacuum hose and cleared joist bays",
+        caption: "Removal in progress",
+      },
+    ],
+    videos: [
+      {
+        src: "/videos/insulation-install.mp4",
+        poster: "/images/insulation-work.jpg",
+        title: "Blown-in insulation install",
+        caption: "Fiberglass blown into the attic around ducts, pipes, and joists.",
+      },
+      {
+        src: "/videos/insulation-removal.mp4",
+        poster: "/images/insulation-removal.jpg",
+        title: "Insulation removal",
+        caption: "Old attic insulation vacuumed out of the bays before a clean install.",
       },
     ],
   },
