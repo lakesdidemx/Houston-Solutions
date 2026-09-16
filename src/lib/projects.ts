@@ -115,7 +115,7 @@ export const projects: Project[] = [
     location: "Houston, TX",
     service: "Insulation",
     slug: "insulation",
-    image: "/images/insulation-removal.jpg",
+    image: "/images/insulation-removal-crew.jpg",
     summary:
       "Old attic insulation was vacuumed out of the joist bays so the deck was clear for a clean blown-in install.",
   },

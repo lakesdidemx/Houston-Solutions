@@ -232,6 +232,16 @@ const serviceMedia: Record<string, ServiceMedia> = {
     },
     gallery: [
       {
+        src: "/images/insulation-install-crew.jpg",
+        alt: "Technician blowing cellulose insulation into a Houston attic to a measured depth",
+        caption: "Blown-in install in progress",
+      },
+      {
+        src: "/images/insulation-removal-crew.jpg",
+        alt: "Technician vacuuming old attic insulation from between joists",
+        caption: "Attic insulation removal",
+      },
+      {
         src: "/images/insulation-install.jpg",
         alt: "Fresh blown-in fiberglass packed around HVAC ductwork in a Houston attic",
         caption: "Blown-in around ducts",
